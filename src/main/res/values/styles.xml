@@ -1,0 +1,134 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.MaterialComponents.Light">
+        <item name="colorSecondary">@color/primaryDarkColor</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/AppShapeAppearance.LargeComponent</item>
+
+
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:numberPickerStyle">@style/NumberPickerTheme</item>
+        <item name="android:colorControlNormal">@color/secondaryColor</item>
+        <item name="android:textColorSecondary">@color/primaryTextColor</item>
+        <item name="android:textColorTertiary">@color/primaryTextColor</item>
+        <item name="android:textColorPrimaryInverse">@color/primaryTextColor</item>
+        <item name="android:textColorSecondaryInverse">@color/primaryTextColor</item>
+        <item name="android:textColorTertiaryInverse">@color/primaryTextColor</item>
+    </style>
+
+    <style name="customButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/secondaryColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="customDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+
+    <style name="verticalDivider">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@color/secondaryColor</item>
+    </style>
+
+    <style name="customEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="customCheckBox">
+        <item name="android:buttonTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+
+    <style name="customTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:fillColor">@color/colorAccent</item>
+        <item name="hintTextAppearance">@style/TextAppearance.Shrine.TextInputLayout.HintText</item>
+        <item name="boxStrokeColor">@color/textInputOutlineColor</item>
+        <item name="shapeAppearance">@style/AppShapeAppearance.SmallComponent</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:attr/colorAccent</item>
+        <item name="android:colorPressedHighlight">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="AppShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="AppShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="AppShapeAppearance.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopLeft">26dp</item>
+    </style>
+
+    <style name="card1">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopLeft">26dp</item>
+    </style>
+
+    <style name="card2">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSizeTopLeft">100dp</item>
+        <item name="cornerSizeBottomRight">100dp</item>
+    </style>
+
+    <style name="SwitchCompatTheme" >
+        <item name="colorControlActivated">@color/primaryColor</item>
+    </style>
+
+    <style name="NumberPickerTheme" parent="@android:style/Widget.Material.NumberPicker">
+        <item name="android:colorControlNormal">@color/primaryColor</item>
+        <item name="android:background">@color/primaryTextColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="AppTheme.NoActionBar">
+        <item name="android:textColorPrimary">@color/bpWhite</item>
+        <!--This line changes the color of icons in toolbar (back, overflow menu icons)-->
+        <item name="android:textColorSecondary">@color/bpWhite</item>
+        <item name="android:colorControlNormal">@color/bpWhite</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/bpblack</item>
+        <item name="android:textColorPrimary">@color/bpWhite</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+</resources>

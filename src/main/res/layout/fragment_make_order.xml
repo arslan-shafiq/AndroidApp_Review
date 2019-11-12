@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical">
+
+
+            <!--Upper Half of screen-->
+            <include
+                layout="@layout/upper_half_make_order"
+                android:layout_width="match_parent"
+                android:layout_height="290dp" />
+
+
+            <!--Lower Half of screen-->
+
+            <!-- Order Details Heading-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/heading_bg"
+                android:gravity="start"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableStart="@drawable/ic_list"
+                android:drawableTint="@color/bpWhite"
+                android:drawablePadding="10dp"
+                android:text="@string/st_order_details"
+                android:textColor="@color/bpWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/primaryColor"
+                        android:layout_weight="0.5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ST_commission_and_weight"
+                        android:textColor="@color/primaryLightColor"
+                        android:textSize="14sp"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/primaryColor"
+                        android:layout_weight="2.5"/>
+
+                </LinearLayout>
+
+                <!-- Comission and Est. weight-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:baselineAligned="false">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/comission_inputtext_layout"
+                        style="@style/customTextInputLayout"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/comission_inputtext"
+                            style="@style/customEditText"
+                            android:hint="@string/st_comission" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/weight_inputtext_layout"
+                        style="@style/customTextInputLayout"
+                        android:layout_margin="10dp"
+                        android:textIsSelectable="true"
+                        android:layout_weight="1">
+
+                   <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/weight_inputtext"
+                            style="@style/customEditText"
+                            android:inputType="numberDecimal"
+                            android:textIsSelectable="true"
+                            android:focusable="false"
+                            android:hint="@string/st_estimated_weight" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Delivery Notes Camera-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/delivery_note_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/ST_todo" />
+                    <View
+                        style="@style/verticalDivider"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id="@+id/delivery_note_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/st_delivery_note_optional"
+                        android:textColor="@color/bpblack"
+                        android:layout_marginStart="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:id="@+id/delivery_note_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_camera"
+                        android:tint="@color/primaryColor"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="20dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/ST_todo" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    style="@style/customDivider"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <!-- Pickup date-->
+                <include
+                    layout="@layout/pickup_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"/>
+                <!-- Pickup date-->
+                <include
+                    layout="@layout/delivery_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/create_order_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/customButton"
+                    android:layout_gravity="center"
+                    android:text="@string/st_create_order"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

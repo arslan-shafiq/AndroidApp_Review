@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/makeOrderFragment_dest">
+    <fragment
+        android:id="@+id/settingsFragment_dest"
+        android:name="de.heuremo.steelmeasureapp.components.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_dest_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeOrderFragment_dest"
+        android:name="de.heuremo.steelmeasureapp.components.makeorder.MakeOrderFragment"
+        android:label="fragment_make_order"
+        tools:layout="@layout/fragment_make_order" />
+    <fragment
+        android:id="@+id/pickupOrdersFragment_dest"
+        android:name="de.heuremo.steelmeasureapp.components.order_history.PickupOrdersFragment"
+        android:label="fragment_order_history"
+        tools:layout="@layout/fragment_order_history" >
+        <action
+            android:id="@+id/action_pickupOrdersFragment_dest_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="de.heuremo.steelmeasureapp.components.change_password.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_settingsFragment_dest"
+            app:destination="@+id/settingsFragment_dest"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <include app:graph="@navigation/nav_login_graph" >
+        <action
+            android:id="@+id/action_global_makeOrderFragment_dest"
+            app:destination="@id/makeOrderFragment_dest" />
+    </include>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="de.heuremo.steelmeasureapp.components.order_history.OrderDetailsFragment"
+        android:label="fragment_order_details"
+        tools:layout="@layout/make_order_measurements_list_item" >
+
+    </fragment>
+</navigation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/makeOrderFragment_dest"
+            android:icon="@drawable/ic_make_order"
+            android:onClick="openARMeasureActivity"
+            android:title="@string/ST_make_order" />
+        <item
+            android:id="@+id/pickupOrdersFragment_dest"
+            android:icon="@drawable/ic_history"
+            android:title="@string/ST_my_pickup_orders" />
+        <item
+            android:id="@+id/settingsFragment_dest"
+            android:icon="@drawable/ic_account"
+            android:title="@string/ST_account" />
+    </group>
+
+    <group android:title="@string/ST_contact_us">
+        <menu>
+            <item
+                android:id="@+id/nav_support_number"
+                android:icon="@drawable/ic_phone"
+                android:onClick="callSupportNumber"
+                android:title="+49 172 6544575"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_support_email"
+                android:icon="@drawable/ic_mail"
+                android:onClick="emailSupportMail"
+                android:title="support@heuremo.com"
+                tools:ignore="HardcodedText" />
+        </menu>
+
+    </group>
+
+
+</menu>

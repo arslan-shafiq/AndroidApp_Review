@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login_graph"
+    app:startDestination="@id/registrationFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="de.heuremo.steelmeasureapp.components.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_activityMain"
+            app:destination="@+id/activityMain"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@+id/registrationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="de.heuremo.steelmeasureapp.components.login.Registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_registrationFormFragment"
+            app:destination="@id/registrationFormFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFormFragment"
+        android:name="de.heuremo.steelmeasureapp.components.login.Registration.RegistrationFormFragment"
+        android:label="fragment_registration__form"
+        tools:layout="@layout/fragment_registration__form" >
+        <action
+            android:id="@+id/action_registrationFormFragment_to_registrationSuccessfulFragment"
+            app:destination="@id/registrationSuccessfulFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@+id/nav_login_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationSuccessfulFragment"
+        android:name="de.heuremo.steelmeasureapp.components.login.Registration.RegistrationSuccessfulFragment"
+        android:label="fragment_registration_successful"
+        tools:layout="@layout/fragment_registration_successful" >
+        <action
+            android:id="@+id/action_registrationSuccessfulFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@+id/nav_login_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/activityMain"
+        android:name="de.heuremo.steelmeasureapp.components.ActivityMain"
+        android:label="main_activity"
+        tools:layout="@layout/main_activity" />
+</navigation>
