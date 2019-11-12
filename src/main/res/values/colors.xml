@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#999999</color>
+    <color name="grey">#F7F7F7</color>
+
+    <color name="ic_launcher_background">#1B5E20</color>
+
+
+    <!--Added Later-->
+    <color name="primaryColor">#2c423a</color>
+    <color name="primaryLightColor">#566d64</color>
+    <color name="primaryDarkColor">#041c14</color>
+    <color name="secondaryColor">#7bb972</color>
+    <color name="secondaryLightColor">#adeda0</color>
+    <color name="secondaryDarkColor">#4c8945</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+
+    <color name="colorError">#F44336</color>
+    <color name="textInputOutlineColor">#7CB973</color>
+    <color name="colorAccent">#566d64</color>
+    <color name="background">#E1E2E1</color>
+    <color name="bpblack">#ff000000</color>
+    <color name="bpWhite">#ffffff</color>
+
+</resources>

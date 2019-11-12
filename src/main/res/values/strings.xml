@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">HeuremoApp</string>
+    <string name="need_permission">Camera permission is needed to run this application</string>
+    <string name="action_1">Delete</string>
+    <string name="action_2">Set as first</string>
+    <string name="action_3">Horizontal move</string>
+    <string name="action_4" translatable="false">Vertical move</string>
+
+    <string name="action_1_toast">Remove this cube.</string>
+    <string name="action_2_toast" translatable="false">Reorder and set this cube to the first.</string>
+    <string name="action_3_toast" translatable="false">Move on x and z axis.</string>
+    <string name="action_4_toast" translatable="false">Move on y axis.</string>
+
+
+    <!-- Added Later-->
+
+    <string name="st_firstname">First Name*</string>
+    <string name="st_Surname">Surname*</string>
+    <string name="st_email">E-Mail*</string>
+    <string name="st_MobileNumber">Mobile Number*</string>
+    <string name="st_password">Password*</string>
+    <string name="st_confirmPassword">Confirm Password*</string>
+    <string name="st_ConfirmRegistration">Confirm Registration</string>
+    <string name="st_Customer">Customer</string>
+    <string name="st_Enter_password">Enter password</string>
+    <string name="st_Login">LOGIN</string>
+    <string name="st_Forget_Password">Forget Password</string>
+    <string name="st_REGISTRATION">REGISTRATION</string>
+    <string name="st_YOUR_DATA">YOUR DATA</string>
+    <string name="st_Invitation_key">Invitation key</string>
+    <string name="st_Customer_Number">Customer Number</string>
+    <string name="st_Data_Protection">Data Protection</string>
+    <string name="st_SMS_notifications">SMS Notifications</string>
+    <string name="st_Email_notifications">E-Mail Notifications</string>
+    <string name="st_Change_Password">Change Password</string>
+    <string name="st_Logout">LOGOUT</string>
+    <string name="st_Continue">Continue</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="st_required_Field_error">Required field can not be empty</string>
+    <string name="st_pass_confirm_pass_error">Password and Confirm Password mismatched</string>
+    <string name="st_required">*required</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="st_data_protection"><u>Data Protection</u></string>
+    <string name="st_conditions"><u>Conditions</u></string>
+    <string name="st_height">Height</string>
+    <string name="st_width">Width</string>
+    <string name="st_long" translatable="false">Length</string>
+    <string name="st_hub_colli">Hub/Colli</string>
+    <string name="st_create_order">create order</string>
+    <string name="st_delivery_note_optional">Delivery Note</string>
+    <string name="st_retype_new_password">Retype New Password</string>
+    <string name="st_new_password">New Password</string>
+    <string name="st_current_password">Current Password</string>
+    <string name="st_deviation">Deviation</string>
+    <string name="st_pickup_desired_date">Pickup ( Desired Date)</string>
+    <string name="st_comission">Commission</string>
+    <string name="st_estimated_total_weight">Est. total weight</string>
+    <string name="st_cancel">Cancel</string>
+    <string name="st_estimated_weight">Est. Total Weight</string>
+    <string name="st_comission_heading">COMISSION:</string>
+    <string name="st_customer_no">Customer No.:</string>
+    <string name="st_notifications">Notifications</string>
+    <string name="st_legal_privacy" translatable="false"><![CDATA[Legal & Privacy]]></string>
+    <string name="st_delivery_desired_date">Delivery ( Desired Date)</string>
+    <string name="st_legal_conditions_error">Please accept the data protection and conditions</string>
+    <string name="st_ok">OK</string>
+    <string name="st_order_details">Order Details</string>
+    <string name="st_conditions_settings">Conditions</string>
+
+    <string name="st_user_name">User Name</string>
+    <string name="st_error_not_valid_email">Enter a valid email</string>
+    <string name="st_error_mobile_number">Enter a valid Mobile Number</string>
+    <string name="st_error_password_too_short">Password should contain at least 6 characters</string>
+    <string name="st_delivery_address">Delivery Address</string>
+    <string name="st_pickup_address">Pickup Address</string>
+    <string name="st_delivery_address_detail">Delivery Address:-</string>
+    <string name="st_pickup_address_detail">Pickup Address:-</string>
+    <string name="st_adress_hint">Street house no., Zip code, City</string>
+    <string name="st_error_conditions_must_accept">Please accept the conditions</string>
+    <string name="st_error_data_protection_must_accept">Please accept the data protection</string>
+    <string name="st_delivery_note">Delivery Note</string>
+    <string name="st_order_date">Order Date</string>
+    <string name="st_error_enter_valid_user_name">Enter a valid user name</string>
+    <string name="searching_for_surfaces">Searching for surfaces…</string>
+    <string name="place_holder_measure_result">Please measure the width</string>
+    <string name="ST_todo">TODO</string>
+    <string name="ST_est_total_weight_kg">Est. Total Weight (kg)</string>
+    <string name="ST_make_order">Make Order</string>
+    <string name="ST_my_pickup_orders">My Pickup Orders</string>
+    <string name="ST_account">Account</string>
+    <string name="ST_contact_us">Contact Us</string>
+    <string name="ST_save_changes">Save Changes</string>
+    <string name="ST_cancel">Cancel</string>
+    <string name="ST_commission_and_weight">Commission And Weight</string>
+    <string name="ST_registration_successful">Registration Successful!</string>
+    <string name="ST_thank_you">Thank You</string>
+    <string name="ST_for_your_registration">For Your Registration</string>
+    <string name="St_todo">TODO</string>
+    <string name="ST_splash_screen">SPLASH SCREEN</string>
+    <string name="ST_drop_off_date">Drop off Date</string>
+    <string name="ST_street_house_no_zip_code_city">Street house no., Zip code city</string>
+    <string name="ST_pickup_date">PickUp Date</string>
+    <string name="ST_search">Search</string>
+
+</resources>

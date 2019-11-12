@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#7DB974"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/bpWhite"
+        android:text="@string/ST_est_total_weight_kg"
+        tools:ignore="RtlHardcoded" />
+
+    <NumberPicker
+        style="@style/NumberPickerTheme"
+        android:id="@+id/numberPicker1"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:descendantFocusability="blocksDescendants" />
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end"
+        android:background="@color/bpWhite"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/set_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="@string/st_ok"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="120dp"
+            android:text="@string/st_cancel"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
